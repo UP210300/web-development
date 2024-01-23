@@ -1,0 +1,58 @@
+Etiqueta de un arcivo HTML
+<html> </html>
+
+Parrafo
+<p></p>
+
+Lista ordenada
+<ol>
+    Elemento de la lista
+    <li></li>
+</ol>
+
+Lista desordenada
+<ol>
+    <li></li>
+</ol>
+
+Resaltar texto en negritas 
+<b></b>
+<strong></strong>
+
+Contenedor
+<div></div>
+
+Salto de linea
+<br/>
+
+Linea
+<hr/>
+
+Contenedor en línea
+<Span></Span>
+
+Enlace 
+<a href=""></a>
+
+Formulario
+<form></form>
+
+Input
+<input type="" value=""/>
+
+Tipos
+text
+button
+checkbox
+color
+date
+file
+image
+submit
+
+Botón
+<button></button>
+
+
+Lorem
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia hic est quas adipisci nemo! Deserunt eos, accusamus nam, sint, quas placeat tenetur repellendus repellat consequuntur ratione pariatur! Explicabo, voluptatibus?
