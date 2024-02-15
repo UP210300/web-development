@@ -28,10 +28,9 @@ This programming course is about  _**web development**_, here you will find the 
 
 ## Getting started
 
-This course is conformed of four main parts:
+This course is conformed of
 
-> 1. [U1](https://github.com/UP210300/UP210300_DSA/tree/main/U1) 
-> 2. [U2](https://github.com/UP210300/UP210300_DSA/tree/main/U2) 
+> 1. [U1](https://github.com/UP210300/web_development/tree/main/U1) 
 
 
 ## Find me 
