@@ -30,7 +30,7 @@ This programming course is about  _**web development**_, here you will find the 
 
 This course is conformed of
 
-> 1. [U1](https://github.com/UP210300/web_development/tree/main/U1) 
+> 1. [U1](https://github.com/UP210300/web-development/tree/main/U1) 
 
 
 ## Find me 
