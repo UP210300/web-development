@@ -8,7 +8,7 @@
 
 <div align ="center">
 
-<img alt="computer" height="200" src="Images/computer.png"/>  
+<img alt="computer" height="200" src="Images/computer.jpg"/>  
 
 </div>
 <br>
