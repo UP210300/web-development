@@ -2,6 +2,8 @@
 const userSelect = document.getElementById('select-users');
 const userContainer = document.getElementById('user-container');
 const taskContainer = document.getElementById('task-container');
+const showTasksButton = document.getElementById('show-tasks-btn');
+
 let userData = [];
 let tasksData = [];
 let id;
@@ -62,14 +64,20 @@ const showUserInfo = (id) => {
   }
 }
 
+showTasksButton.addEventListener('click', () => {
+  const select = document.getElementById('select-users');
+  const selectedId = parseInt(select.value);
+
+  showUserTasks(selectedId);
+});
+
 const showUserTasks = (id) => {
   const userTaskContainer = document.getElementById('task-container');
   const userTasks = tasksData.filter(task => task.userId === id);
 
   if (userTasks.length > 0) {
-    userTaskContainer.innerHTML = '';
-
-    const ul = document.createElement('ul');
+    const ul = document.getElementById('tasks-list');
+    ul.innerHTML = '';
     userTasks.forEach(task => {
       const li = document.createElement('li');
       const span = document.createElement('span');
@@ -90,14 +98,14 @@ const showUserTasks = (id) => {
 userSelect.addEventListener('change', () => {
   getUserId();
   showUserInfo(id);
-  showUserTasks(id);
+  const ul = document.getElementById('tasks-list');
+  ul.innerHTML= '';
 });
 
 window.addEventListener('load', () => {
   Promise.all([getAllUsers(), getAllTasks()])
     .then(() => {
       showUserInfo(1);
-      showUserTasks(1); 
     })
     .catch(error => console.error(error));
 });
