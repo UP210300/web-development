@@ -102,6 +102,7 @@ function removeTask(selectedUserId) {
 }
 
 // Escuchar el clic en los botones "Update"
+
 tasksContainer.addEventListener('click', async (event) => {
     const button = event.target.closest('.update-task-button');
     if (button) {
@@ -120,6 +121,3 @@ tasksContainer.addEventListener('click', async (event) => {
         }
     }
 });
-
-
-

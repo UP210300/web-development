@@ -55,9 +55,22 @@ export async function deleteTask(taskId) {
     }
 }
 
-export async function getTaskById() {
-    console.log('aaa')
+export async function getTaskById(taskId) {
+    try {
+        const response = await fetch(`/crud/api/getTask.php?task_id=${taskId}`);
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch task");
+        }
+
+        const task = await response.json();
+        return task;
+    } catch (error) {
+        console.error("Error fetching task:", error);
+        return null;
+    }
 }
+
 
 
 
